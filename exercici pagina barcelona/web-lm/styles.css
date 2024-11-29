@@ -11,7 +11,10 @@ body {
 h1, h2, h3 {
     color: #333; /* Color del text dels títols */
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
+
+
 
 p {
     margin: 0 0 15px;
@@ -29,7 +32,7 @@ p {
 /* Estils del menú de navegació */
 nav {
     opacity: 0.8;
-    background: #0078d4; /* Blau del menú */
+    background: lightskyblue; /* Blau del menú */
     color: white;
     padding: 8px 0;
     display: flex;
@@ -55,7 +58,7 @@ nav ul li {
 
 nav ul li a {
     display: inline-block;
-    background: #0078d4; /* Color de fondo */
+    background: steelblue; /* Color de fondo */
     color: white; /* Color del texto */
     padding: 10px 20px; /* Espacio interno */
     text-decoration: none; /* Eliminar subrayado */
@@ -67,14 +70,14 @@ nav ul li a {
 
 nav ul li a.button {
     display: inline-block;
-    background: #0078d4; /* Color de fondo */
-    color: white; /* Color del texto */
+    background: steelblue; 
+    color: white; 
     padding: 10px 15px;
-    text-decoration: none; /* Elimina el subrayado por defecto */
-    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; 
+    border-radius: 5px; 
     text-align: center;
-    transition: background 0.3s; /* Efecto de transición */
-    margin: 0 5px; /* Espaciado entre botones */
+    transition: background 0.3s; 
+    margin: 0 5px; 
 }
 
 
@@ -84,7 +87,7 @@ nav ul li a:hover {
 
 /* Estils per al peu de pàgina */
 footer {
-    background: #333;
+    background: skyblue;
     color: white;
     text-align: center;
     padding: 10px 0;
@@ -104,6 +107,7 @@ footer {
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .hero p {
@@ -125,13 +129,15 @@ footer {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: calc(33% - 20px); /* Ample automàtic segons 3 columnes */
+
     overflow: hidden;
     transition: transform 0.3s;
 }
 
 .card img {
     width: 100%;
-    height: auto;
+    height: 180px; /* Tamaño fijo para las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que no se deforme */
 }
 
 .card h3 {
@@ -149,8 +155,8 @@ footer {
 
 /* Botó estilitzat */
 .button {
-    display: inline-block;
-    background: #0078d4;
+    display: block;
+    background: steelblue;
     color: white;
     padding: 10px 15px;
     text-decoration: none;
@@ -158,6 +164,7 @@ footer {
     text-align: center;
     transition: background 0.3s;
     margin: 15px;
+    font-family: 'Playfair Display', serif;
 }
 
 .button:hover {
@@ -185,3 +192,14 @@ footer {
         margin: 10px 0;
     }
 }
+
+.hero img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    border-radius: 8px; 
+    
+}
+
+
