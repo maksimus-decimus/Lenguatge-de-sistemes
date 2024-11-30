@@ -32,7 +32,7 @@ p {
 /* Estils del menú de navegació */
 nav {
     opacity: 0.8;
-    background: lightskyblue; /* Blau del menú */
+    background: #ba2c37; /* Blau del menú */
     color: white;
     padding: 8px 0;
     display: flex;
@@ -58,7 +58,7 @@ nav ul li {
 
 nav ul li a {
     display: inline-block;
-    background: steelblue; /* Color de fondo */
+    background: #ba2c37; /* Color de fondo */
     color: white; /* Color del texto */
     padding: 10px 20px; /* Espacio interno */
     text-decoration: none; /* Eliminar subrayado */
@@ -70,7 +70,7 @@ nav ul li a {
 
 nav ul li a.button {
     display: inline-block;
-    background: steelblue; 
+    background: #ba2c37; 
     color: white; 
     padding: 10px 15px;
     text-decoration: none; 
@@ -87,31 +87,48 @@ nav ul li a:hover {
 
 /* Estils per al peu de pàgina */
 footer {
-    background: skyblue;
+    background: #ba2c37;
     color: white;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
 }
 
+footer p {
+color: white;
+}
+
+
 /* Estils de la pàgina d'inici */
 .hero {
-    background-image: url('../images/barcelona.jpg'); /* Canviar per la ruta real */
+    background-image: url('images/portada_fondo.jpg'); /* Canviar per la ruta real */
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 100px 20px;
+    padding: 300px 20px;
     text-align: center;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
+
+
 
 .hero h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
     font-family: 'Montserrat', sans-serif;
+    color: white;
 }
 
 .hero p {
     font-size: 1.2rem;
+    color: white;
+}
+
+.hero p1 {
+    font-size: 5.5rem;
+    text-transform: uppercase;
+    align-items: flex-end;
+
 }
 
 /* Contenidor amb Flexbox */
@@ -156,7 +173,7 @@ footer {
 /* Botó estilitzat */
 .button {
     display: block;
-    background: steelblue;
+    background: #ba2c37;
     color: white;
     padding: 10px 15px;
     text-decoration: none;
@@ -168,7 +185,7 @@ footer {
 }
 
 .button:hover {
-    background: #0056a3;
+    background: #ba2c37;
 }
 
 /* Responsivitat */
