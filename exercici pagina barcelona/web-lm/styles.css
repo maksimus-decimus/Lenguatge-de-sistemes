@@ -14,7 +14,10 @@ h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
+.imatge_2 img{
+    width: 100%;
 
+}
 
 p {
     margin: 0 0 15px;
@@ -124,8 +127,8 @@ color: white;
     color: white;
 }
 
-.hero p1 {
-    font-size: 5.5rem;
+.hero h4 {
+    font-size: 3.5rem;
     text-transform: uppercase;
     align-items: flex-end;
 
