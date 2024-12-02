@@ -101,13 +101,13 @@ color: white;
 
 /* Estils de la pàgina d'inici */
 .hero {
-    background-image: url('images/portada_fondo.jpg'); /* Canviar per la ruta real */
+    background-image: url('images/portada_fondo.jpg'); 
     background-size: cover;
     background-position: center;
     color: white;
     padding: 300px 20px;
     text-align: center;
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-repeat: no-repeat; 
 }
 
 
