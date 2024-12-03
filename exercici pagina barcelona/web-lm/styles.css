@@ -14,7 +14,15 @@ h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
+.division_texto h3 {
+    font-weight: bold;
+}
 
+.division_texto p {
+    text-align: center;
+    margin: 30px;
+
+}
 
 p {
     margin: 0 0 15px;
