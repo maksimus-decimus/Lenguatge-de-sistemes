@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Markdown a HTML</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> </head>
+<body>
+    <div id="markdown-content">
+        </div>
+ 
+    <script>
+        // Text Markdown d'exemple (podria venir d'un fitxer o un textarea)
+        const markdownText = `
+# Títol Principal
+ 
+Això és un paràgraf amb **negreta** i *cursiva*.
+ 
+*   Element 1
+*   Element 2
+ 
+[Enllaç a Google](https://www.google.com)
+
+### Lista ordenada
+
+1. Elemento 1
+2. Elemento 2
+3. Elemento 3
+`;
+ 
+        // Converteix el Markdown a HTML
+        const html = marked.parse(markdownText);
+ 
+        // Insereix l'HTML al div
+        document.getElementById('markdown-content').innerHTML = html;
+    </script>
+</body>
+</html>
