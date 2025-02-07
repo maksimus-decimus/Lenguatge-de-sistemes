@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cambio de posición de imágenes</title>
+  <style>
+    /* Estilos simples para centrar el contenido */
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+      font-family: Arial, sans-serif;
+    }
+    .imagenes {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    img {
+      width: 300px;
+      height: auto;
+      border: 2px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="imagenes">
+    <!-- Reemplaza 'ruta-imagen1.jpg' y 'ruta-imagen2.jpg' por las rutas o URLs de tus imágenes -->
+    <img id="imagen1" src="im1.jpg" alt="Imagen 1">
+    <img id="imagen2" src="im2.jpg" alt="Imagen 2">
+  </div>
+
+  <button id="btn-cambiar">Cambiar Posición</button>
+  <button id="btn-titulo">Añadir título</button>
+
+  <script>
+    
+    document.getElementById("btn-titulo").addEventListener("click", function() {
+      // Obtenemos la imagen por su ID
+      const titulo = document.createElement("h1");
+      
+        // Añadimos el título al elemento titulo
+        titulo.innerText = "Nuevo título";
+
+        // Añadimos el elemento titulo al elemento body
+        document.body.appendChild(titulo);
+    });
+
+    // Obtenemos el botón y asignamos un escuchador de eventos para el clic
+    document.getElementById("btn-cambiar").addEventListener("click", function() {
+      // Obtenemos las dos imágenes por su ID
+      const imagen1 = document.getElementById("imagen1");
+      const imagen2 = document.getElementById("imagen2");
+
+      // Guardamos el atributo src de la primera imagen en una variable temporal
+      const tempSrc = imagen1.src;
+
+      // Intercambiamos los atributos src
+      imagen1.src = imagen2.src;
+      imagen2.src = tempSrc;
+    });
+  </script>
+
+</body>
+</html>
