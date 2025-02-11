@@ -11,11 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
           const deleteBtn = document.createElement('button');
           deleteBtn.textContent = 'Eliminar';
-          deleteBtn.style.backgroundColor = 'red';  // Fondo rojo
-          deleteBtn.style.color = 'white';          // Texto blanco
-          deleteBtn.style.border = 'none';          // Sin borde
-          deleteBtn.style.padding = '5px 10px';     // Espaciado interno
-          deleteBtn.style.marginLeft = '10px';      // Separación del texto
+          deleteBtn.style.backgroundColor = 'red';  
+          deleteBtn.style.color = 'white';          
+          deleteBtn.style.border = 'none';          
+          deleteBtn.style.padding = '5px 10px';     
+          deleteBtn.style.marginLeft = '10px';      
           deleteBtn.style.cursor = 'pointer';   
           deleteBtn.onclick = () => newTask.remove();
 
